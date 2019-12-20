@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F3EB"
+    tools:context=".activity.storesListActivity">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#05BDA5"
+        android:onClick="onClickHome"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#05BDA5"
+        android:onClick="onClickBack"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/lableProbableStoresList"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Probable Stores List"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#034B43"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/storeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lableProbableStoresList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
