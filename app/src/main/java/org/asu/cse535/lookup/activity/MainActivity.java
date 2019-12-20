@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         if (!path.equals("")) {
 
             VisionRequestInitializer requestInitializer =
-                    new VisionRequestInitializer("AIzaSyDbhiX7Yo5hXQMxobqEZ5HGHs0QKYOfffU") {
+                    new VisionRequestInitializer("API KEY") {
                         /**
                          * We override this so we can inject important identifying fields into the HTTP
                          * headers. This enables use of a restricted cloud platform API key.
